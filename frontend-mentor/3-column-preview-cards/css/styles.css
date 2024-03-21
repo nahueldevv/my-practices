@@ -1,0 +1,91 @@
+/*
+Colores
+    Background: #333
+
+    Tarjetas
+        Orange: hsl(31, 77%, 52%)
+        Cyan: hsl(184, 100%, 22%)
+        Dark cyan: hsl(179, 100%, 13%)
+    
+    Texto
+        Blanco al 0.75 de opacidad
+
+Fuentes de la página
+    Títulos
+        https://fonts.google.com/specimen/Big+Shoulders+Display
+        Estilo 600
+    Textos
+        https://fonts.google.com/specimen/Lexend+Deca
+        Estilo 400
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  margin: 0;
+  color: hsl(0 100% 100% / 0.75);
+  text-align: center;
+  /* # Usando esto y el display:inline-block, se consigue un efecto 'resposive' */
+}
+
+.card-container {
+  width: 90%;
+  height: 500px;
+  margin: 100px auto;
+
+  font-size: 0;
+  /* # Truco, nos sirve para salvar las separaciones que aparecen, de todas formas, se ajusta nuevamente en la tarjeta
+    usando font-size y dandole el tamaño que necesitamos */
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 100%;
+  padding: 30px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.card-column-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-column-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card-column-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.title-card {
+  margin: 30px 0;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.text {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.button-card {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  bottom: 50px;
+  border: 0;
+  border-radius: 20px;
+}
+
+.button-1 {
+  color: hsl(31, 77%, 52%);
+}
+.button-2 {
+  color: hsl(184, 100%, 22%);
+}
+.button-3 {
+  color: hsl(179, 100%, 13%);
+}

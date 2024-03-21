@@ -1,0 +1,105 @@
+/*
+Colores
+  Tarjetas
+    Red: hsl(0, 78%, 62%)
+    Cyan: hsl(180, 62%, 55%)
+    Orange: hsl(34, 97%, 64%)
+    Blue: hsl(212, 86%, 64%)
+  Sombra
+    Dark Blue: hsl(240, 25%, 50%) al 20% de opacidad;
+  Texto
+    Grey: hsl(229, 6%, 66%)
+  Fondo de la tarjeta y del background
+    White: hsl(0, 0%, 93%)
+
+Fuente de la página
+  https://fonts.google.com/specimen/Poppins
+  Estilos 200, 400 y 600
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+body{
+   background-color: hsl(0, 0%, 93%);
+   font-family: 'Poppins', sans-serif;
+   text-align: center;
+}
+
+.title, .subtitle{
+   display: block;
+   font-size: 1.5rem;
+   margin: 0;
+   margin-bottom: 0.3rem;
+}
+.title{
+   font-weight: 600;
+}
+.subtitle{
+   font-weight: 400;
+}
+.text{
+   margin: 0 0 0.1rem;
+   font-size: 0.7rem;
+   font-weight: 200;
+   color: hsl(229 6% 66%);
+}
+
+.card{
+   position: absolute;
+   width: 250px;
+   height: 180px;
+   padding: 2px 20px;
+   background-color: hsl(0, 0%, 93%);
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+   text-align: left;
+   border-radius: 8px;
+   
+}
+
+.supervisor-card{
+   /* left: 10vw; */
+   top: 40vh;
+   left: 300px;
+   box-shadow: 10px 10px 10px hsl(240 25% 50% / 0.2), 0 -7px 0 -2px hsl(180 62% 55%);
+}
+.builder-card{
+   left: 41vw;
+   box-shadow: 10px 10px 10px hsl(240 25% 50% / 0.2), 0 -7px 0 -2px hsl(0, 78%, 62%);
+}
+.karma-card{
+   left: 41vw;
+   top: 60vh;
+   box-shadow: 10px 10px 10px hsl(240 25% 50% / 0.2), 0 -7px 0 -2px hsl(34, 97%, 64%);
+}
+.calculator-card{
+   top: 40vh;
+   right: 300px;
+   box-shadow: 10px 10px 10px hsl(240 25% 50% / 0.2), 0 -7px 0 -2px hsl(212, 86%, 64%);
+}
+
+.title-card{
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+.icon{
+   position: absolute;
+   display: inline-block;
+   width: 70px;
+   padding: 15px 15px;
+   bottom: 0;
+   right: 0;
+
+}
+main{
+   display: inline-block;
+}
+
+
+
